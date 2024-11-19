@@ -1,0 +1,226 @@
+2024-11-19 20:12:08,999 p=37548 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 20:12:39,976 p=37548 u=vagrant n=ansible | PLAY [all] *************************************************************************************************************************************************************************************
+2024-11-19 20:12:40,074 p=37548 u=vagrant n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2024-11-19 20:12:45,054 p=37548 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:12:46,777 p=37548 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:12:46,822 p=37548 u=vagrant n=ansible | TASK [include_role : multi_Pruebas] ************************************************************************************************************************************************************
+2024-11-19 20:12:47,301 p=37548 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:12:47,366 p=37548 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:12:47,397 p=37548 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:12:47,423 p=37548 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:12:47,600 p=37548 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial.yml"
+}
+2024-11-19 20:12:47,626 p=37548 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial.yml"
+}
+2024-11-19 20:12:47,671 p=37548 u=vagrant n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ****************************************************************************************************************************************
+2024-11-19 20:12:47,857 p=37548 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"reason": "Could not find or access '/home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/prueba_202311_Recu2doParcial.yml.yml' on the Ansible Controller."}
+2024-11-19 20:12:47,860 p=37548 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"reason": "Could not find or access '/home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/prueba_202311_Recu2doParcial.yml.yml' on the Ansible Controller."}
+2024-11-19 20:12:47,868 p=37548 u=vagrant n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2024-11-19 20:12:47,872 p=37548 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:12:47,874 p=37548 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:13:16,477 p=37891 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 20:13:42,381 p=37891 u=vagrant n=ansible | PLAY [all] *************************************************************************************************************************************************************************************
+2024-11-19 20:13:42,443 p=37891 u=vagrant n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2024-11-19 20:13:45,798 p=37891 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:13:46,605 p=37891 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:13:46,647 p=37891 u=vagrant n=ansible | TASK [include_role : multi_Pruebas] ************************************************************************************************************************************************************
+2024-11-19 20:13:46,839 p=37891 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:13:46,919 p=37891 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:13:46,934 p=37891 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:13:46,971 p=37891 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:13:47,068 p=37891 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:13:47,121 p=37891 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:13:47,145 p=37891 u=vagrant n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ****************************************************************************************************************************************
+2024-11-19 20:13:47,322 p=37891 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"reason": "We were unable to read either as JSON nor YAML, these are the errors we got from each:\nJSON: Expecting value: line 1 column 1 (char 0)\n\nSyntax Error while loading YAML.\n  but found another document\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/roles/multi_Pruebas/tasks/prueba_202311_Recu2doParcial.yml': line 6, column 1, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n---\n^ here\n"}
+2024-11-19 20:13:47,327 p=37891 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"reason": "We were unable to read either as JSON nor YAML, these are the errors we got from each:\nJSON: Expecting value: line 1 column 1 (char 0)\n\nSyntax Error while loading YAML.\n  but found another document\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/roles/multi_Pruebas/tasks/prueba_202311_Recu2doParcial.yml': line 6, column 1, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n---\n^ here\n"}
+2024-11-19 20:13:47,349 p=37891 u=vagrant n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2024-11-19 20:13:47,350 p=37891 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:13:47,353 p=37891 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:13:54,101 p=38106 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 20:14:19,105 p=38106 u=vagrant n=ansible | PLAY [all] *************************************************************************************************************************************************************************************
+2024-11-19 20:14:19,158 p=38106 u=vagrant n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2024-11-19 20:14:23,650 p=38106 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:14:24,047 p=38106 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:14:24,084 p=38106 u=vagrant n=ansible | TASK [include_role : multi_Pruebas] ************************************************************************************************************************************************************
+2024-11-19 20:14:24,247 p=38106 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:14:24,323 p=38106 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:14:24,358 p=38106 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:14:24,390 p=38106 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:14:24,536 p=38106 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 202311_2doParcial"
+}
+2024-11-19 20:14:24,619 p=38106 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 202311_2doParcial"
+}
+2024-11-19 20:14:24,664 p=38106 u=vagrant n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ****************************************************************************************************************************************
+2024-11-19 20:14:24,905 p=38106 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"reason": "Could not find or access '/home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/prueba_202311_2doParcial.yml' on the Ansible Controller."}
+2024-11-19 20:14:24,907 p=38106 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"reason": "Could not find or access '/home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/prueba_202311_2doParcial.yml' on the Ansible Controller."}
+2024-11-19 20:14:24,912 p=38106 u=vagrant n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2024-11-19 20:14:24,915 p=38106 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:14:24,917 p=38106 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:18:07,166 p=38333 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 20:18:29,566 p=38333 u=vagrant n=ansible | PLAY [all] *************************************************************************************************************************************************************************************
+2024-11-19 20:18:29,611 p=38333 u=vagrant n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2024-11-19 20:18:33,228 p=38333 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:18:35,169 p=38333 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:18:35,212 p=38333 u=vagrant n=ansible | TASK [include_role : multi_Pruebas] ************************************************************************************************************************************************************
+2024-11-19 20:18:35,420 p=38333 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:18:35,509 p=38333 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:18:35,540 p=38333 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:18:35,569 p=38333 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:18:35,672 p=38333 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:18:35,734 p=38333 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:18:35,765 p=38333 u=vagrant n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ****************************************************************************************************************************************
+2024-11-19 20:18:35,977 p=38333 u=vagrant n=ansible | included: /home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/roles/multi_Pruebas/tasks/prueba_202311_Recu2doParcial.yml for 127.0.0.1, localhost
+2024-11-19 20:18:36,009 p=38333 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:18:36,083 p=38333 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del parcial 202311_2doParcial "
+}
+2024-11-19 20:18:36,110 p=38333 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Tareas del parcial 202311_2doParcial "
+}
+2024-11-19 20:18:36,137 p=38333 u=vagrant n=ansible | TASK [multi_Pruebas : Agrego archivo desde template] *******************************************************************************************************************************************
+2024-11-19 20:18:36,403 p=38333 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'nombre' is undefined"}
+2024-11-19 20:18:36,481 p=38333 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'nombre' is undefined"}
+2024-11-19 20:18:36,492 p=38333 u=vagrant n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2024-11-19 20:18:36,496 p=38333 u=vagrant n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:18:36,497 p=38333 u=vagrant n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:22:14,719 p=38659 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 20:22:28,817 p=38659 u=vagrant n=ansible | PLAY [all] *************************************************************************************************************************************************************************************
+2024-11-19 20:22:28,874 p=38659 u=vagrant n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2024-11-19 20:22:32,521 p=38659 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:22:34,041 p=38659 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:22:34,113 p=38659 u=vagrant n=ansible | TASK [include_role : multi_Pruebas] ************************************************************************************************************************************************************
+2024-11-19 20:22:34,305 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:22:34,402 p=38659 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:22:34,430 p=38659 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:22:34,463 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:22:34,603 p=38659 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:22:34,607 p=38659 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:22:34,633 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ****************************************************************************************************************************************
+2024-11-19 20:22:34,846 p=38659 u=vagrant n=ansible | included: /home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/roles/multi_Pruebas/tasks/prueba_202311_Recu2doParcial.yml for 127.0.0.1, localhost
+2024-11-19 20:22:34,878 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:22:34,956 p=38659 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del parcial 202311_2doParcial "
+}
+2024-11-19 20:22:34,982 p=38659 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Tareas del parcial 202311_2doParcial "
+}
+2024-11-19 20:22:35,078 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : Agrego archivo desde template] *******************************************************************************************************************************************
+2024-11-19 20:22:36,980 p=38659 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 20:22:37,383 p=38659 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:22:37,405 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : Crear estructura de directorios para el parcial] *************************************************************************************************************************
+2024-11-19 20:22:38,608 p=38659 u=vagrant n=ansible | changed: [localhost] => (item=alumno)
+2024-11-19 20:22:38,797 p=38659 u=vagrant n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-19 20:22:39,492 p=38659 u=vagrant n=ansible | changed: [localhost] => (item=equipo)
+2024-11-19 20:22:39,651 p=38659 u=vagrant n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-19 20:22:39,677 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : Crear archivo datos_alumno.txt desde template] ***************************************************************************************************************************
+2024-11-19 20:22:41,083 p=38659 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 20:22:41,847 p=38659 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:22:41,882 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : Crear archivo datos_equipo.txt desde template] ***************************************************************************************************************************
+2024-11-19 20:22:43,163 p=38659 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 20:22:43,844 p=38659 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:22:43,871 p=38659 u=vagrant n=ansible | TASK [multi_Pruebas : Configurar sudoers para grupo 2PSupervisores] ****************************************************************************************************************************
+2024-11-19 20:22:45,176 p=38659 u=vagrant n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/etc/sudoers'
+2024-11-19 20:22:45,180 p=38659 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "Traceback (most recent call last):\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1732047764.0041146-39301-244648171782024/AnsiballZ_lineinfile.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1732047764.0041146-39301-244648171782024/AnsiballZ_lineinfile.py\", line 94, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1732047764.0041146-39301-244648171782024/AnsiballZ_lineinfile.py\", line 40, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.lineinfile', init_globals=None, run_name='__main__', alter_sys=True)\n  File \"/usr/lib/python3.10/runpy.py\", line 224, in run_module\n    return _run_module_code(code, init_globals, run_name, mod_spec)\n  File \"/usr/lib/python3.10/runpy.py\", line 96, in _run_module_code\n    _run_code(code, mod_globals, init_globals,\n  File \"/usr/lib/python3.10/runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"/tmp/ansible_lineinfile_payload_jdjfu5tz/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 580, in <module>\n  File \"/tmp/ansible_lineinfile_payload_jdjfu5tz/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 570, in main\n  File \"/tmp/ansible_lineinfile_payload_jdjfu5tz/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 277, in present\nPermissionError: [Errno 13] Permission denied: b'/etc/sudoers'\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-19 20:22:45,580 p=38659 u=vagrant n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/etc/sudoers'
+2024-11-19 20:22:45,583 p=38659 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "module_stderr": "Shared connection to 127.0.0.1 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1732047763.9909363-39299-103221090168263/AnsiballZ_lineinfile.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1732047763.9909363-39299-103221090168263/AnsiballZ_lineinfile.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1732047763.9909363-39299-103221090168263/AnsiballZ_lineinfile.py\", line 40, in invoke_module\r\n    runpy.run_module(mod_name='ansible.modules.lineinfile', init_globals=None, run_name='__main__', alter_sys=True)\r\n  File \"/usr/lib/python3.10/runpy.py\", line 224, in run_module\r\n    return _run_module_code(code, init_globals, run_name, mod_spec)\r\n  File \"/usr/lib/python3.10/runpy.py\", line 96, in _run_module_code\r\n    _run_code(code, mod_globals, init_globals,\r\n  File \"/usr/lib/python3.10/runpy.py\", line 86, in _run_code\r\n    exec(code, run_globals)\r\n  File \"/tmp/ansible_lineinfile_payload_18j0hv7g/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 580, in <module>\r\n  File \"/tmp/ansible_lineinfile_payload_18j0hv7g/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 570, in main\r\n  File \"/tmp/ansible_lineinfile_payload_18j0hv7g/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 277, in present\r\nPermissionError: [Errno 13] Permission denied: b'/etc/sudoers'\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-19 20:22:45,589 p=38659 u=vagrant n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2024-11-19 20:22:45,592 p=38659 u=vagrant n=ansible | 127.0.0.1                  : ok=9    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:22:45,598 p=38659 u=vagrant n=ansible | localhost                  : ok=9    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:24:08,875 p=39355 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 20:24:15,641 p=39355 u=vagrant n=ansible | PLAY [all] *************************************************************************************************************************************************************************************
+2024-11-19 20:24:15,691 p=39355 u=vagrant n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2024-11-19 20:24:19,951 p=39355 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:24:20,680 p=39355 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:24:20,733 p=39355 u=vagrant n=ansible | TASK [include_role : multi_Pruebas] ************************************************************************************************************************************************************
+2024-11-19 20:24:20,904 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:24:21,000 p=39355 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:24:21,041 p=39355 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-11-19 20:24:21,081 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:24:21,261 p=39355 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:24:21,335 p=39355 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 202311_Recu2doParcial"
+}
+2024-11-19 20:24:21,396 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ****************************************************************************************************************************************
+2024-11-19 20:24:21,650 p=39355 u=vagrant n=ansible | included: /home/vagrant/repogit/UTN-FRA_SO_Examenes/202311_Recu/ansible/roles/multi_Pruebas/tasks/prueba_202311_Recu2doParcial.yml for localhost, 127.0.0.1
+2024-11-19 20:24:21,682 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : debug] *******************************************************************************************************************************************************************
+2024-11-19 20:24:21,757 p=39355 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del parcial 202311_2doParcial "
+}
+2024-11-19 20:24:21,781 p=39355 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Tareas del parcial 202311_2doParcial "
+}
+2024-11-19 20:24:21,814 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : Agrego archivo desde template] *******************************************************************************************************************************************
+2024-11-19 20:24:23,756 p=39355 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:24:24,214 p=39355 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:24:24,238 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : Crear estructura de directorios para el parcial] *************************************************************************************************************************
+2024-11-19 20:24:25,367 p=39355 u=vagrant n=ansible | ok: [localhost] => (item=alumno)
+2024-11-19 20:24:25,576 p=39355 u=vagrant n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-19 20:24:26,413 p=39355 u=vagrant n=ansible | ok: [localhost] => (item=equipo)
+2024-11-19 20:24:26,523 p=39355 u=vagrant n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-19 20:24:26,545 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : Crear archivo datos_alumno.txt desde template] ***************************************************************************************************************************
+2024-11-19 20:24:27,927 p=39355 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:24:28,705 p=39355 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:24:28,740 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : Crear archivo datos_equipo.txt desde template] ***************************************************************************************************************************
+2024-11-19 20:24:30,161 p=39355 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 20:24:30,790 p=39355 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:24:30,814 p=39355 u=vagrant n=ansible | TASK [multi_Pruebas : Configurar sudoers para grupo 2PSupervisores] ****************************************************************************************************************************
+2024-11-19 20:24:32,073 p=39355 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 20:24:32,166 p=39355 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 20:24:32,188 p=39355 u=vagrant n=ansible | TASK [Otra tarea] ******************************************************************************************************************************************************************************
+2024-11-19 20:24:32,273 p=39355 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 20:24:32,298 p=39355 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 20:24:32,392 p=39355 u=vagrant n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2024-11-19 20:24:32,398 p=39355 u=vagrant n=ansible | 127.0.0.1                  : ok=11   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:24:32,400 p=39355 u=vagrant n=ansible | localhost                  : ok=11   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

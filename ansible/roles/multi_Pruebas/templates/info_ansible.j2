@@ -1,0 +1,12 @@
+- name: "Agrego archivo desde template"
+  template:
+    src: info_ansible.j2
+    dest: /tmp/info_ansible.txt
+  vars:
+    nombre: "Bautista"
+    apellido: "Santos Tapia"
+    division: "113-2"
+    id: "{{ ansible_hostname }}"
+    distribucion: "{{ ansible_distribution }}"
+    cantidad_cores: "{{ ansible_processor_vcpus }}"
+

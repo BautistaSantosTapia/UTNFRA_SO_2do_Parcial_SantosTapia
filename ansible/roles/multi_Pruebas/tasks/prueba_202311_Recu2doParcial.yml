@@ -1,0 +1,48 @@
+
+- debug:
+    msg: "Tareas del parcial 202311_2doParcial "
+
+
+- name: "Agrego archivo desde template"
+  template:
+    src: info_ansible.j2
+    dest: /tmp/info_ansible.txt
+
+
+- name: Crear estructura de directorios para el parcial
+  file:
+    path: /tmp/2do_parcial/{{ item }}
+    state: directory
+    mode: '0755'
+  with_items:
+    - alumno
+    - equipo
+
+
+- name: Crear archivo datos_alumno.txt desde template
+  template:
+    src: template_alumno.j2
+    dest: /tmp/2do_parcial/alumno/datos_alumno.txt
+  vars:
+    nombre: "Bautista"
+    apellido: "Santos Tapia"
+    division: "113-2"
+
+
+- name: Crear archivo datos_equipo.txt desde template
+  template:
+    src: template_equipo.j2
+    dest: /tmp/2do_parcial/equipo/datos_equipo.txt
+  vars:
+    id: "{{ ansible_hostname }}"
+    distribucion: "{{ ansible_distribution }}"
+    cantidad_cores: "{{ ansible_processor_vcpus }}"
+
+
+- name: Configurar sudoers para grupo 2PSupervisores
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    line: "%2PSupervisores ALL=(ALL) NOPASSWD:ALL"
+    validate: "visudo -cf %s"
+
