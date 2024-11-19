@@ -1,4 +1,3 @@
-#!/bin/bash
 
 sudo pvcreate /dev/sdc
 sudo pvcreate /dev/sdd
